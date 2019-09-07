@@ -1,4 +1,5 @@
 import utils, random
+from random import shuffle
 
 
 def add(a1,a2):
@@ -14,7 +15,8 @@ def sub(a1,a2):
     Subtracts a2 from a1
     '''
     toReturn = 0
-    # add your code here
+    # add your code here 
+    toReturn = a1 - a2
     return toReturn
 
 def mult(a1,a2):
@@ -23,6 +25,7 @@ def mult(a1,a2):
     '''
     toReturn = 0
     # add your code here
+    toReturn = a1*a2
     return toReturn
 
 def div(a1,a2):
@@ -31,6 +34,7 @@ def div(a1,a2):
     '''
     toReturn = 0
     # add your code here
+    toReturn = a1/a2
     return toReturn
 
 def floorDiv(a1,a2):
@@ -39,6 +43,8 @@ def floorDiv(a1,a2):
     '''
     toReturn = 0
     # add your code here
+    toReturn = a1//a2
+
     return toReturn
 
 def mod(a1,a2):
@@ -48,6 +54,7 @@ def mod(a1,a2):
     '''
     toReturn = 0
     # add your code here
+    toReturn = a1%a2    
     return toReturn
 
 def exp(a1,a2):
@@ -56,6 +63,8 @@ def exp(a1,a2):
     '''
     toReturn = 0
     # add your code here
+    toReturn = a1**a2
+
     return toReturn
 
 def orderOperations(a1,a2,a3):
@@ -65,6 +74,8 @@ def orderOperations(a1,a2,a3):
     '''
     toReturn = 0
     # add your code here
+    toReturn = (a1 + a2)*a3
+
     return toReturn
 
 def whichType(t):
@@ -73,6 +84,7 @@ def whichType(t):
     '''
     toReturn = ''
     # add your code here
+    toReturn = type(t)
     return toReturn
 
 def convertInt(i):
@@ -81,6 +93,8 @@ def convertInt(i):
     '''
     toReturn = 0
     # add your code here
+    toReturn = int(i)
+
     return toReturn
 
 def convertFloat(f):
@@ -89,6 +103,7 @@ def convertFloat(f):
     '''
     toReturn = 0.0
     # add your code here
+    toReturn = float(f)
     return toReturn
 
 def convertStr(s):
@@ -97,6 +112,7 @@ def convertStr(s):
     '''
     toReturn = ''
     # add your code here
+    toReturn = str(s)
     return toReturn
 
 def concat(s1,s2):
@@ -105,6 +121,7 @@ def concat(s1,s2):
     '''
     toReturn = ''
     # add your code here
+    toReturn = s1 + s2
     return toReturn
 
 def whichChar(s,a):
@@ -113,6 +130,7 @@ def whichChar(s,a):
     '''
     toReturn = ''
     # add your code here
+    toReturn = s[a]
     return toReturn
 
 def substr(s,a1,a2):
@@ -121,6 +139,7 @@ def substr(s,a1,a2):
     '''
     toReturn = ''
     # add your code here
+    toReturn = s[a1:a2]
     return toReturn
 
 def reverseStr(s):
@@ -129,6 +148,7 @@ def reverseStr(s):
     '''
     toReturn = ''
     # add your code here
+    toReturn = s[::-1]
     return toReturn
 
 def isIn(l,e):
@@ -137,6 +157,7 @@ def isIn(l,e):
     '''
     toReturn = ''
     # add your code here
+    toReturn = (e in l)
     return toReturn
 
 def randomElement(l):
@@ -145,6 +166,7 @@ def randomElement(l):
     '''
     toReturn = ''
     # add your code here
+    toReturn = random.choice(l)
     return toReturn
 
 def randomNumber():
@@ -153,6 +175,7 @@ def randomNumber():
     '''
     toReturn = 0
     # add your code here
+    toReturn = random.randrange(1000,9999)
     return toReturn
 
 def reverseList(l):
@@ -161,6 +184,7 @@ def reverseList(l):
     '''
     toReturn = []
     # add your code here
+    toReturn = l[::-1]
     return toReturn
 
 def shuffleList(l):
@@ -169,6 +193,8 @@ def shuffleList(l):
     '''
     toReturn = []
     # add your code here
+    shuffle(l)
+    toReturn = l
     return toReturn
 
 def listUntil(a):
@@ -177,6 +203,8 @@ def listUntil(a):
     '''
     toReturn = []
     # add your code here
+    l= list(range(a))
+    toReturn = l
     return toReturn
 
 
